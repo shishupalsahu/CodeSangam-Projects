@@ -4,35 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> C programming multi choice question</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    /* text-align: center; */
+}
+body{
+    display: flex;
+    background-color:wheat;
+    /* align-items: center; */
+
+}
+.start_btn,info_box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+/* start quiz button styling */
+.start_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color:beige;
+    padding: 15px 30px;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+    background-color:pink;
+    cursor:pointer;
+
+}
+.info_box{
+    width: 40%;
+    /* display: flex; */
+    background-color:powderblue;
+    border-radius: 5px;
+    justify-items: center;
+    align-items: center;
+
+}
+.info_box .info_title{
+    height: 60px;
+    width: 100%;
+    border-radius: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+.info_box .info_list{
+    padding:15px 35px;
+    /* background-color: aquamarine; */
+    
+}
+.info_box .info_list .info{
+    margin:5px 0;
+    font-size: 17px;
+
+}
+.info_box .info_list .info span{
+    font-weight: 600;
+    color: #007bff;
+
+}
+.info_box .buttons{
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid ghostwhite;
+}
+.info_box .buttons button{
+    margin:0 5px;
+    height:40px;
+    width:100px;
+    border: 1px solid blue;
+    background: blue;
+    border-radius: 5px ;
+    color: wheat;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.buttons button.quit{
+
+}
+
+    </style>
 </head>
 <body>
-    <div class="c1">
-        <div class="c2" id="d1">
-            <h2> multiple choice question</h2>
-            <hr>
-            <ul>
-                <li>
-                     <input type="radio" name="text" class="m3" id="d2">
-                     <label for="d2" id="option_1">quiz option</label>
-                </li>
-                <li>
-                     <input type="radio" name="text" class="m3" id="d2">
-                     <label for="d2" id="option_1">quiz option</label>
-                </li>
-                <li>
-                     <input type="radio" name="text" class="m3" id="d2">
-                     <label for="d2" id="option_1">quiz option</label>
-                </li>
-                <li>
-                     <input type="radio" name="text" class="m3" id="d2">
-                     <label for="d2" id="option_1">quiz option</label>
-                </li>
-            </ul>
-            <hr>
-            <div class="btn">
-                <button type="submit" id="d3">submit</button>
-            </div>
+    <!-- <p>c quiz</p> -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <div class="info_box">
+        <div class="info_title">
+            <span>
+                some rules of this quiz
+            </span>
+        </div>
+        <div class="info_list">
+            <!-- <div class="info">Y</div> -->
+            <div class="info">1.you will have only <span>15 second</span> per each question</div>
+            <div class="info">2.once you select your answer ,you can't reselect</div>
+            <div class="info">3.you cant exit from the quiz while you are playing</div>
+            <div class="info">4.you can not select any option once time goes off</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
         </div>
     </div>
+    <header>
+    <div class="quiz_box">
+        <head><div class="title">awesom quiz application</div></head>
+        <div class="timer">
+            <div class="time_text">time left</div>
+            <div class="time_sec">15</div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="que text">
+        <span>Which of the following is not a type of constructer in C++ ?</span>
+    </div>
+    <div class="option_list">
+        <div class="option">
+            <span>Default constructer</span>
+            <div class="icon tick"><i class="fas fa-check" ></i></div>
+        </div>
+        <div class="option">
+            <span>Parameterized constructer</span>
+            <div class="icon cross"><i class="fas fa-times" ></i></div>
+        </div>
+        <div class="option">
+            <span>copy constructer</span>
+            <div class="icon cross"><i class="fas fa-times" ></i></div>
+        </div>
+        <div class="option">
+            <span>friend constructer</span>
+            <div class="icon cross"><i class="fas fa-times" ></i></div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
