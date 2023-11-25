@@ -2,10 +2,15 @@
   "name": "tanvi",
   "version": "1.0.0",
   "description": "this is my description",
-  "main": "index.js",
+  "main": "nodejs1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1",
+    "url": "^0.11.3"
+  }
 }
